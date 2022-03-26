@@ -1,1 +1,2 @@
-# testing-serialization
+# testing-serialization 
+Simple testing of serialization of data to a YAML string. This is in preparation for using it to allow saving and loading of game state for hangman. This program allows saving by creating a directory if it does not exist and then creating a new file where YAML.dump passes in a hash of values to save. The load feature uses YAML.load to create a Ruby object from a string, which is opened using File.Open, and then the class instance variables are set to the corresponding values. This is a straigtforward process, but for some reason, took a minute to grasp!
